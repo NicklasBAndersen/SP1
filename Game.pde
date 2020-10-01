@@ -415,6 +415,7 @@ class Game
       {
         //We have a collision
         ++playerPoints;
+        food[i].setRandomPos();
         if(playerPoints >= 50){
           gameOver = true;
           winnerName = "PLAYER 1";
@@ -427,6 +428,7 @@ class Game
       {
         //We have a collision
         ++player2Points;
+        food[i].setRandomPos();
          if(player2Points >= 50){
           gameOver = true;
           winnerName = "PLAYER 2";
